@@ -89,7 +89,8 @@ class App {
     // console.log(this.#workouts);
     divSidebar.addEventListener('click', function (e) {
       // console.log(e.target.className);
-      if (e.target.className === 'sidebar') {
+      if (e.target.className === 'sidebar' ||
+          e.target.className === 'workouts') {
         form.classList.add('hidden');
 
         //--- clearing the inputs
